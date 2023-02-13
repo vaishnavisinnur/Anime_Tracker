@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Add Manhwa</title>
+    <link rel="stylesheet" href="add_anime.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: helvetica;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/1764669.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="box" action="http://localhost/anime/code/add_manhwa.php" method="post">
+        <a href="manhwa_page.html"><img src="../images/28.png" height="80px" width="100px" title="MANHWA PAGE"></a>
+        <h1 class="dem">MANHWA</h1>
+        <input type="text" name="name" placeholder="Manhwa" required>
+        <input type="text" name="chapter" placeholder="Chapter" required pattern="[0-9]{1,5}" title="Digits ONLY">
+        <input type="text" name="status" placeholder="Status" required pattern="[A-Z]*" title="CAPS only">
+        <input type="submit" name="submit" value="SAVE">
+        </a>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Add Anime</title>
+    <link rel="stylesheet" href="add_anime.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: helvetica;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/7.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="box" action="http://localhost/anime/code/add_anime.php" method="post">
+        <a href="anime_page.html"><img src="../images/2.png" height="80px" width="120px" title="ANIME PAGE"></a>
+        <h1 class="dem">ANIME</h1>
+        <input type="text" name="anime" placeholder="Anime" required>
+        <input type="text" name="episode" placeholder="Episode" required pattern="[0-9]{1,5}" title="Digits ONLY">
+        <input type="text" name="status" required pattern="[A-Z]*" title="CAPS only" placeholder="Status">
+        <input type="submit" value="SAVE">
+        </a>
+    </form>
+</body>
+
+</html>
